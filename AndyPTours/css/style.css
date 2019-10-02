@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif; 
+}
+.main img{
+    max-width: 80%;
+}
+.logo{
+    width: 135px;
+    height: 50px;
+
+}
+.container{
+    width: 100%;
+	  margin: auto;
+ 
+}
+
+/*---------Header style---------------*/
+.header {
+  height: 60px;
+  background: #333;
+  width: 100%;
+  position: fixed; /*to keep the menu on top of the page*/
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo, .icon-menu {
+  font-family: 'Fugaz One', cursive;
+  position: left;
+  color: white;
+  list-style: none;
+  padding: 0;
+  margin: 22;
+  height: 60px; 
+  font-size: 40px;
+}
+
+.icon-menu {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background: #999;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  margin-left: auto;
+  cursor: pointer;
+}
+.nav {
+  position: absolute;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  transition: all 0.5s;
+   z-index: 100;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 60px; 
+  cursor: pointer;
+  font-family: 'Fugaz One', cursive;
+  font-size: 25px;
+  
+}
+.menu__link {
+  display: block;
+  padding: 15px;
+  background: rgba(51,51,51,0.9);
+  text-decoration: none;
+  color: #fff; 
+  height: 60px;
+	border-bottom: 1px solid #999;
+  
+}
+.menu__link:hover {
+  background: rgba(225,225,225,0.3);
+  color: #000;  
+}
+.muestrate{
+ left: 0;
+}
+
+h1 {
+ color: #D2691E;
+}
+
+h2{
+  font-family: Racing+Sans+One;
+}
+
+p {
+ color: black;
+ font-size: 18px;
+}
+
+
+
+/*-------Banner img style-----*/
+.banner img{
+    width: 100%;
+    height: 750px;
+   
+}
+.banner {
+   position: relative;
+		
+}
+.banner .container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+		
+}
+
+/*-------Info style------*/
+ .info{
+    background: #32CD32;
+    color: #fff;
+    text-align: center;
+     margin-top: -50px; 
+    
+}
+ .info__img{
+    border-radius: 50%;
+    border: 7px solid #444; 
+     position: relative;
+
+     
+    
+}
+.info__txt{
+    text-align: justify;
+    padding: 15px;
+}
+
+/*-------- bar style--------*/
+.bar{
+    background: #F4A460; 
+    color: #fff;  
+    text-align: center;
+    padding: 15px;
+}
+.bar h3{
+    font-size: 30px;
+}
+.destination {
+    color: #00FF7F;
+    font-family: 'Fugaz One', cursive;
+}
+
+.bar .bar__title{
+    font-size: 40px;
+    color: #4B0082;
+    font-family: 'Fugaz One', cursive;
+
+}
+.info__title1{
+    font-size: 30px;
+    color: white;
+    font-family: 'Fugaz One', cursive;
+}
+
+.bar .bar__txt{
+    text-align: justify;
+    padding: 15px;
+}
+.bar__img{
+    border-radius: 50%;
+    border: 7px solid #00CED1; 
+    
+}
+.bar__img2{
+  text-decoration: none;
+  color: #483D8B;
+}
+
+
+
+/*----------Map style----------*/
+.map {
+    padding: 15px ;
+    background:  #F0EDE5;
+    text-align: center;
+}
+.map h3{
+    font-size: 25px;
+    font-family: Racing+Sans+One;
+}
+.map p{
+    text-align: center;
+	
+}
+
+.location{
+  color: #4B0082;
+
+}
+
+.map_iframe{
+  width:90%;
+  height:450px;
+  border: 0;
+  border-style: 0;
+  
+}
+/*--------footer style--------*/
+.footer{
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.footer .fa-instagram {
+  font-size:24px;
+}
+
+.copy {
+  text-align: center;
+  color: white;
+}
+
+/*social media*/
+
+.fa {
+  color: red;
+
+}
+
+
+.icon-facebook{
+  color: #2776ED;
+  padding: 7px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------Responsive style--------*/
+@media(min-width:480px){
+    .main img{
+    max-width: 90%;
+}
+    .container .banner__title{
+        font-size: 44px;
+    }
+    .container .banner__txt{
+        font-size: 25px;   
+    }
+	.info__column{
+        width: 32%;
+    }
+     .info .container{
+    display: flex;
+		 justify-content: space-between;
+		 
+    }
+    
+    .bar .container{  
+     display: flex; 
+     flex-wrap: wrap;
+     justify-content:space-around;
+}
+    .bar__column{
+        width:  40%;
+    }
+    .bar h3{
+        font-size: 30px;
+    }
+}
+
+
+@media(min-width:768px){
+      .bar__column{
+        width: 24%; 
+    } 
+}
+
+@media(min-width:1024px){
+	.nav {
+    position: static;
+    width: auto;
+  }
+  .menu {
+    display: flex;
+  }
+  .icon-menu {
+    display: none;
+  }
+	.menu__link{
+		border: none;
+	}
+    .banner .container .banner__title{
+        font-size: 50px;  
+    }
+     .banner .container .banner__txt{
+        font-size: 36px; 
+        color: #32CD32;
+
+    }
+
+
+    .container{
+        width:1000px;
+    }
+   
+}
+@media(min-width:1280px){
+    .container{
+        width: 1200px;
+    }
+     .banner .container .banner__title{
+        font-size: 90px; 
+		
+    }
+     .banner .container .banner__txt{
+        font-size: 46px; 
+    }
+	
+	
+}
+
+  
+ 
